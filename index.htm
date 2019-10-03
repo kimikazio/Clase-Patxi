@@ -1,28 +1,41 @@
 <html>
- <head>
-  <meta charset="UTF-8">
-  <title>Finlandia WebSite</title>
+	<head>
+		<style type="text/css">
+			#lista{
+			margin: 0 auto;
+			height:48px;
+			width:1210px;
+			padding:0;
+			border: 0;
+			background:#E8E7E3;}
+			
+			button{
+			height:48px;
+			width:298px;}
+			
+		</style>
+		<meta charset="UTF-8">
+		<title>Finlandia WebSite</title>
  </head>
  <body>
   <h1 align="center">Finlandia Website</h1>
-  <a href="horario.htm">Horario</a><br>
-  <a href="fechas.htm">Fechas Relevantes</a><br>
-  <a href="lista.htm">Lista de Clase</a><br>
-  <a href="grupos.htm">Lista de Grupos</a><br>
-  <br><br><br>
-  <a href="formulario.htm">Contáctenos</a>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <h3 align="center" align="center"><i>Jia Jie Li, Sergio Luhía, Iker Perez, Adrian Villanueva </h2></i>
+		<div id="lista" align="center">
+				<button id="horario" onclick="window.open('horario.html')">horario</button>
+				<button id="fecha" onclick="window.open('fecha.html')">Fecha revelantes</button>
+				<button id="clase" onclick="window.open('clase.html')">Lista de clase</button>
+				<button id="grupos" onclick="window.open('grupos.html')">Lista de grupos</button>
+		</div>
+   <br>
+   <br>
+   <fieldset style="width:500">
+   <form action="dummy.txt" method="post" enctype="text/plain">
+   <legend>Contáctenos</legend>
+    Su nombre y apellidos: <input type="text" size="25" name="nombre"><br>
+    Email: <input type="text" size="25" name="mail"><br>
+    Teléfono: <input type="text" size="10" maxlength="9" name="telefono"><br>
+    Comentarios: <br><textarea name="comentarios" cols="50" rows="9"></textarea><br>
+    <br><input type="submit" value="Enviar">
+   </fieldset >
+  </form>
  </body>
 </html>
