@@ -1,2 +1,0 @@
-# Clase-Patxi
-Ejercicios HTMl
